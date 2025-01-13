@@ -1,0 +1,72 @@
+/* Main styling */
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    border-bottom: 4px solid black; 
+}
+img{
+    width: 100%;
+}
+/* Navigation section */
+nav {
+    display: flex; 
+    justify-content: space-between; /* Logo links, iconen rechts */
+    align-items: center; 
+    background-color: black;
+    & img{
+        width: 6em;
+    }
+    & ul{
+        display: flex; /* Iconen naast elkaar plaatsen */
+        list-style: none; 
+        align-items: center;
+        gap: 15px;
+        & li{
+            padding: 5px;
+        }
+    }
+}
+
+/*  Hero section */
+.hero{
+   background-color: rgb(0, 0, 0); 
+}
+/* Announcement slider section */
+.order-info {
+    font-size: 1rem;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden; 
+    position: relative;
+}
+
+.announcement-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    animation: slide 9s 0s infinite;
+}
+
+.announcement-slider li {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Animatie voor de slider */
+@keyframes slide {
+    0%, 33% { transform: translateY(0); }
+    50%, 83% { transform: translateY(-40px); }
+    100% { transform: translateY(-80px); }
+}
+/* New products section */
+.new-products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    padding: 1em; 
+}
