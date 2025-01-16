@@ -5,12 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weird Cool Stuff</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/interaction.js" defer></script>
 </head>
 <body>
 <!-- Header / navigation -->
     <header>
         <nav>
-            <img src="../the-startup-responsive-interactive-website/assets/logo.png" alt="Weird Cool Stuff logo">
+            <!-- hamburger icon -->
+            <button class="hamburger" aria-label="Open menu">
+                <svg fill="none" height="24" viewBox="0 0 25 24" width="25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><mask id="a" height="24" maskUnits="userSpaceOnUse" width="25" x="0" y="0"><path d="m.463928 0h24v24h-24z" fill="#d9d9d9"/></mask><g mask="url(#a)">
+                <path d="m3.46393 18v-2h17.99997v2zm0-5v-2h17.99997v2zm0-5v-2h17.99997v2z" fill="#fff"/></g></svg>
+            </button>
+            <!-- logo -->
+            <img src="/assets/logo.png" alt="Weird Cool Stuff logo">
+            <!-- mobile menu: categories -->
+            <div class="menu" id="menu" hidden>
+                <button class="close-menu" aria-label="Sluit menu">✖</button>
+                <ul>
+                    <li>
+                        <img src="/assets/categ1.png" alt="Nieuw binnen">
+                        <a href="#">Nieuw binnen</a>
+                    </li>
+
+                    <li>
+                        <img src="/assets/categ2.png" alt="Mode">
+                        <a href="#">Mode</a>
+                    </li>
+
+                    <li>
+                        <img src="/assets/categ3.png" alt="Eten & drinken">
+                        <a href="#">Eten & drinken</a>
+                    </li>
+
+                    <li>
+                        <img src="/assets/categ4.png" alt="Tuin">
+                        <a href="#">Tuin</a>
+                    </li>
+
+                    <li>
+                        <img src="/assets/categ5.png" alt="Bad & douche">
+                        <a href="#">Bad & douche</a>
+                    </li>
+
+                    <li>
+                        <img src="/assets/categ6.png" alt="Cadeau">
+                        <a href="#">Cadeau</a>
+                    </li>
+
+                    <li>
+                        <img src="/assets/categ7.png" alt="Inspiratie">
+                        <a href="#">Inspiratie</a>
+                    </li>
+
+                    <li>
+                        <img src="/assets/categ8.png" alt="Keuken">
+                        <a href="#">Keuken</a>
+                    </li>
+
+                    <li>
+                        <img src="/assets/categ9.png" alt="Huis">
+                        <a href="#">Huis</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- visible menu -->
             <ul>
                 <li>
                     <svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +93,7 @@
 <!-- Hero section -->
     <section class="hero">
         <h1>Hele vreemde mokken</h1>
-        <img src="../the-startup-responsive-interactive-website/assets/hero-mokjes.png" alt="Hero afbeelding van mokjes">
+        <img src="/assets/hero-mokjes.png" alt="Hero afbeelding van mokjes">
     </section>
 
 <!-- Announcement bar -->
@@ -52,7 +111,7 @@
         <ul>
             <li>
                 <article>
-                    <img src="../the-startup-responsive-interactive-website/assets/product-1.png" alt="Tandenkaars">
+                    <img src="/assets/product-1.png" alt="Tandenkaars">
                     <h4>Tandenkaars</h4>
                     <p>€ 10,00</p>
                     <button>Winkelmand</button>
@@ -68,7 +127,7 @@
             </li>
             <li>
                 <article>
-                    <img src="../the-startup-responsive-interactive-website/assets/product-3.png" alt="Tandenkaars">
+                    <img src="/assets/product-3.png" alt="Tandenkaars">
                     <h4>Tandenkaars</h4>
                     <p>€ 10,00</p>
                     <button>Winkelmand</button>
@@ -81,13 +140,13 @@
 <!-- Recommended section -->
     <section class="recommended">
         <article>
-            <img src="../the-startup-responsive-interactive-website/assets/recommended-cover1.png" alt="Apres-ski accessoires">
+            <img src="/assets/recommended-cover1.png" alt="Apres-ski accessoires">
             <h4>Helemaal blitz tijdens de apres-ski</h4>
             <p>Maak je klaar om te schitteren op de piste en in de apres-ski!</p>
             <button>Shop nu</button>
         </article>
         <article>
-            <img src="../the-startup-responsive-interactive-website/assets/recommended-cover2.png" alt="Gekke cadeaus">
+            <img src="/assets/recommended-cover2.png" alt="Gekke cadeaus">
             <h4>Gekke cadeaus voor gekke mensen</h4>
             <p>Op zoek naar het perfecte cadeau voor die ene gekke vriend(in)?</p>
             <button>Shop nu</button>
@@ -100,7 +159,7 @@
         <ul>
             <li>
                 <article>
-                    <img src="../the-startup-responsive-interactive-website/assets/tip-1.png" alt="Leuke ideeën voor het nieuwe jaar">
+                    <img src="/assets/tip-1.png" alt="Leuke ideeën voor het nieuwe jaar">
                     <h4>Leuke dingen voor het nieuwe jaar</h4>
                     <p>Begin het nieuwe jaar goed met deze leuke ideeën en inspiratie!</p>
                     <button>Lees meer</button>
@@ -108,7 +167,7 @@
             </li>
             <li>
                 <article>
-                    <img src="../the-startup-responsive-interactive-website/assets/tip-2.png" alt="Tips voor een bizarre avond">
+                    <img src="/assets/tip-2.png" alt="Tips voor een bizarre avond">
                     <h4>9 tips voor een bizarre avond</h4>
                     <p>Zin in een avond om nooit te vergeten? Met deze tips wordt het memorabel!</p>
                     <button>Lees meer</button>
@@ -173,13 +232,13 @@
 <!-- Paying methods section -->
         <section class="betaalmethodes">
             <ul>
-            <li><img src="../the-startup-responsive-interactive-website/assets/ideal.png" alt="Betaalmethodes"></li>
-            <li><img src="../the-startup-responsive-interactive-website/assets/klarna.png" alt="Klarna"></li>
-            <li><img src="../the-startup-responsive-interactive-website/assets/bankbetaling.png" alt="iDeal"></li>
-            <li><img src="../the-startup-responsive-interactive-website/assets/giropay.png" alt="Visa"></li>
-            <li><img src="../the-startup-responsive-interactive-website/assets/Group.png" alt="Mastercard"></li>
-            <li><img src="../the-startup-responsive-interactive-website/assets/paypal.png" alt="PayPal"></li>
-            <li><img src="../the-startup-responsive-interactive-website/assets/g4158.png" alt="Afterpay"></li>
+            <li><img src="/assets/ideal.png" alt="Betaalmethodes"></li>
+            <li><img src="/assets/klarna.png" alt="Klarna"></li>
+            <li><img src="/assets/bankbetaling.png" alt="iDeal"></li>
+            <li><img src="/assets/giropay.png" alt="Visa"></li>
+            <li><img src="/assets/Group.png" alt="Mastercard"></li>
+            <li><img src="/assets/paypal.png" alt="PayPal"></li>
+            <li><img src="/assets/g4158.png" alt="Afterpay"></li>
             </ul>
         </section>
     </footer>
