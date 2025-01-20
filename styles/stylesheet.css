@@ -1,0 +1,60 @@
+body {
+    /* Fonts */
+    @font-face {
+        font-family: 'American-Typewriter-Regular';
+        src: url(../fonts/american-typewriter-regular.ttf) format('truetype');
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    @font-face {
+        font-family: 'American-Typewriter-Bold';
+        src: url(../fonts/american-typewriter-bold.ttf) format('truetype');
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    /* Kleuren */
+    --primary-color: #ffffff;
+    --secondary-color: #000;
+    --highlight-color: #FFD700;
+    --gradient-color-start: #ffd700;
+    --gradient-color-end: #ffc107;
+    --hover-gradient-start: #ffc107;
+    --hover-gradient-end: #ff9800;
+    --text-dark: #333;
+    --text-light: #555;
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-dark: rgba(0, 0, 0, 0.2);
+    --background-overlay: rgba(0, 0, 0, 0.7);
+    --btn-gradient: linear-gradient(45deg, #ffd700, #ffc107);
+    --btn-gradient-hover: linear-gradient(45deg, #ffc107, #ff9800);
+
+    /* Typografie */
+    --font-family-header: 'American-Typewriter-Bold', sans-serif;
+    --font-family-body: 'American-Typewriter-Regular', sans-serif;
+
+    /* Afmetingen */
+    --border-radius: 12px;
+    --button-radius: 20px;
+    --carousel-btn-size: 40px;
+    --carousel-btn-size-large: 50px;
+
+    /* Overgangen */
+    --transition-duration: 0.3s;
+    --transition-ease: ease;
+
+    /* Schaduwen */
+    --shadow-small: 0 4px 6px var(--shadow-light);
+    --shadow-medium: 0 6px 12px var(--shadow-light);
+    --shadow-hover: 0 8px 16px var(--shadow-dark);
+
+    /* Responsive breakpoints */
+    --breakpoint-tablet: 768px;
+    --breakpoint-desktop: 1024px;
+
+    /* Algemene styling */
+    font-family: var(--font-family-body);
+    background-color: var(--primary-color);
+    color: var(--text-dark);
+}

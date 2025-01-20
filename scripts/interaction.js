@@ -16,3 +16,21 @@ document.addEventListener('DOMContentLoaded', () => {
         body.classList.remove('menu-open'); // Scrollen weer toestaan
     });
 });
+
+// carousel interaction
+document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.querySelector('.carousel');
+    const nextBtn = document.querySelector('.next-btn');
+    const prevBtn = document.querySelector('.prev-btn');
+    const scrollAmount = 245; // Aantal pixels om te scrollen
+
+    // Scroll naar rechts
+    nextBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+
+    // Scroll naar links
+    prevBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+});

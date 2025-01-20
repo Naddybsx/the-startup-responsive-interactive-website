@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weird Cool Stuff</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/stylesheet.css">
     <script src="scripts/interaction.js" defer></script>
 </head>
 <body>
@@ -106,36 +107,56 @@
     </section>
 
 <!-- New products section -->
-    <section class="new-products">
-        <h3>Nieuwe producten</h3>
-        <ul>
+<section class="new-products">
+    <h3>Nieuwe producten</h3>
+    <div class="carousel-container">
+        <button class="carousel-btn prev-btn" aria-label="Vorige">←</button>
+        <button class="carousel-btn next-btn" aria-label="Volgende">→</button>
+        <ul class="carousel">
             <li>
                 <article>
                     <img src="/assets/product-1.png" alt="Tandenkaars">
                     <h4>Tandenkaars</h4>
-                    <p>€ 10,00</p>
-                    <button>Winkelmand</button>
+                    <p>€ 4,99</p>
+                    <button class="add-to-cart">+ <span class="cart-icon">🛒</span></button>
                 </article>
             </li>
             <li>
                 <article>
-                    <img src="../the-startup-responsive-interactive-website/assets/product-2.png" alt="Tandenkaars">
-                    <h4>Tandenkaars</h4>
-                    <p>€ 10,00</p>
-                    <button>Winkelmand</button>
+                    <img src="/assets/product-2.png" alt="Pangezicht">
+                    <h4>Pangezicht</h4>
+                    <p>€ 21,99</p>
+                    <button class="add-to-cart">+ <span class="cart-icon">🛒</span></button>
                 </article>
             </li>
             <li>
                 <article>
-                    <img src="/assets/product-3.png" alt="Tandenkaars">
-                    <h4>Tandenkaars</h4>
-                    <p>€ 10,00</p>
-                    <button>Winkelmand</button>
+                    <img src="/assets/product-3.png" alt="Perenlamp">
+                    <h4>Perenlamp</h4>
+                    <p>€ 15,49</p>
+                    <button class="add-to-cart">+ <span class="cart-icon">🛒</span></button>
                 </article>
             </li>
+            <li>
+                <article>
+                    <img src="/assets/product-4.png" alt="Kerstboomkaars">
+                    <h4>Kerstboomkaars</h4>
+                    <p>€ 3,99</p>
+                    <button class="add-to-cart">+ <span class="cart-icon">🛒</span></button>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <img src="/assets/product-5.png" alt="Kerstmanmuts">
+                    <h4>Kerstmanmuts</h4>
+                    <p>€ 7,99</p>
+                    <button class="add-to-cart">+ <span class="cart-icon">🛒</span></button>
+                </article>
         </ul>
-        <a href="#">Bekijk alles</a>
-    </section>
+    </div>
+    <a href="#" class="view-all">Bekijk alles</a> 
+</section>
+
 
 <!-- Recommended section -->
     <section class="recommended">
