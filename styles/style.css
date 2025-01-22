@@ -22,6 +22,12 @@ section{
 img{
     width: 100%;
 }
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
 /* Navigation section */
 nav {
     padding: 0 1em;
@@ -34,7 +40,6 @@ nav {
     }
     & ul{
         display: flex; /* Iconen naast elkaar plaatsen */
-        list-style: none; 
         align-items: center;
         gap: 15px;
     }
@@ -131,7 +136,81 @@ body.menu-open {
 
 /* Hero section */
 .hero {
-    background-color: var(--secondary-color);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 270px;
+& img {
+    object-fit: cover;
+ }
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: #5c160481;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.hero-content {
+    color: var(--primary-color);
+    padding: 2rem 1rem;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: #ffd700;
+    color: #000000;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-right: 2em;
+    text-shadow: #000000 0 0 10px;
+}
+
+.hero-button {
+    background: hwb(0 0% 100%);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hero-button:hover {
+    background: var(--hover-gradient-start);
+    color: var(--secondary-color);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+    .hero {
+        height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero-button {
+        font-size: 1.5rem;
+        padding: 1rem 2.5rem;
+    }
 }
 
 /* Announcement slider section */
@@ -164,7 +243,6 @@ body.menu-open {
     50%, 83% { transform: translateY(-40px); }
     100% { transform: translateY(-80px); }
 }
-/* Main styling */
 
 /* Carousel section */
 .carousel-container {
@@ -174,7 +252,6 @@ body.menu-open {
     padding: 1rem 0;
 }
 
-/* Carousel */
 .carousel {
     --average-spacing: 1rem;
     --border: 1px solid var(--secondary-color);
